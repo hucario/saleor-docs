@@ -14,6 +14,8 @@ input OrderFilterInput {
   search: String
   metadata: [MetadataFilter!]
   channels: [ID!]
+  authorizeStatus: [OrderAuthorizeStatusEnum!]
+  chargeStatus: [OrderChargeStatusEnum!]
   updatedAt: DateTimeRangeInput
   isClickAndCollect: Boolean
   isPreorder: Boolean
@@ -38,6 +40,10 @@ input OrderFilterInput {
 #### `metadata` ([`MetadataFilter`](../../../developer/api-reference/inputs/metadata-filter))
 
 #### `channels` ([`ID`](../../../developer/api-reference/scalars/id))
+
+#### `authorizeStatus` ([`OrderAuthorizeStatusEnum`](../../../developer/api-reference/enums/order-authorize-status-enum))
+
+#### `chargeStatus` ([`OrderChargeStatusEnum`](../../../developer/api-reference/enums/order-charge-status-enum))
 
 #### `updatedAt` ([`DateTimeRangeInput`](../../../developer/api-reference/inputs/date-time-range-input))
 
